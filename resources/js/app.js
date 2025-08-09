@@ -3,17 +3,18 @@ import {createPinia} from 'pinia';
 import {createRouter, createWebHistory} from 'vue-router';
 import App from './App.vue';
 import {useAuthStore} from "@/stores/auth.js";
+import HomePage from "./pages/HomePage.vue";
 
 
 const routes = [
-    {path: '/', component: Example},
-    {path: '/example', component: Example},
+    {path: '/', component: HomePage},
+    {path: '/example', component: HomePage},
     {
         path: '/example/:id/:slug',
-        component: Example,
+        component: HomePage,
         name: 'example'
     },
-    { path: '/example', name: 'example', component: Example },
+    { path: '/example', name: 'example', component: HomePage },
     {
         path: '/login',
         name: 'login',

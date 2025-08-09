@@ -8,8 +8,8 @@ services:
         image: mariadb:11.6
         restart: unless-stopped
         volumes:
-            - ../db/mysql:/var/www/html/db
-            - ../db/mysql:/var/lib/mysql
+            - ../laravelbackendapidb/mysql:/var/www/html/laravelbackendapidb
+            - ../laravelbackendapidb/mysql:/var/lib/mysql
             - ./mysql/docker-entrypoint-initdb.d/:/docker-entrypoint-initdb.d
         environment:
             MYSQL_DATABASE: "${DB_DATABASE}"
