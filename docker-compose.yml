@@ -3,14 +3,14 @@ networks:
         driver: bridge
 
 services:
-    mariadb:
-        container_name: "mariadb"
+    mysql:
+        container_name: "mysql"
         image: mariadb:11.6
         restart: unless-stopped
         volumes:
-            - ../db/mariadb:/var/www/html/db
-            - ../db/mariadb:/var/lib/mariadb
-            - ./mariadb/docker-entrypoint-initdb.d/:/docker-entrypoint-initdb.d
+            - ../db/mysql:/var/www/html/db
+            - ../db/mysql:/var/lib/mysql
+            - ./mysql/docker-entrypoint-initdb.d/:/docker-entrypoint-initdb.d
         environment:
             MYSQL_DATABASE: "${DB_DATABASE}"
             MYSQL_USER: "${DB_USERNAME}"
@@ -36,11 +36,11 @@ services:
                 - UID=${UID:-1000}
                 - GID=${GID:-1000}
         depends_on:
-            mariadb:
+            mysql:
                 condition: service_started
         environment:
             - DB_DATABASE=laravelapibackend
-            - DB_HOST=mariadb
+            - DB_HOST=mysql
             - DB_PORT=7655
             - DB_USERNAME=root
             - DB_PASSWORD=myPassword123

@@ -1,4 +1,4 @@
-FROM php:8.5.0alpha4-cli-alpine
+FROM php:8.4.10-cli-alpine
 
 RUN apk update && \
     apk add --update linux-headers && \

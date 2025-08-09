@@ -25,4 +25,4 @@ Homestead.yaml
 Thumbs.db
 composer.lock
 package-lock.json
-mariadb/
+mysql/
