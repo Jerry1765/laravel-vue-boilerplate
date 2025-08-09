@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+@tailwind utilities;
+
+@plugin "daisyui" {
+    themes: laravelvue --default
+}
+
+@plugin "daisyui/theme" {
+    name: "laravelvue"; /* Theme name */
+    default: true; /* Set as default theme */
+    prefersdark: false; /* Disable dark mode */
+    color-scheme: light; /* Browser UI colors */
+
+    /* Custom color palette */
+    --color-base-100: #FFFFFF; /* White */
+    --color-base-200: #F5F8FA; /* Light blue-gray */
+    --color-base-300: #E1E8ED; /* Lighter blue-gray */
+    --color-base-content: #003366; /* Dark blue text */
+
+    --color-primary: #003366;
+    --color-primary-content: #FFFFFF; /* White text */
+
+    --color-secondary: #FFCC00;
+    --color-secondary-content: #003366; /* Dark blue text */
+
+    --color-accent: #37CDBE; /* Teal accent */
+    --color-accent-content: #FFFFFF;
+
+    --color-neutral: #3D4451; /* Dark gray */
+    --color-neutral-content: #FFFFFF;
+
+    --color-info: #3ABFF8; /* Blue info */
+    --color-info-content: #002B3D;
+
+    --color-success: #36D399; /* Green success */
+    --color-success-content: #003320;
+
+    --color-warning: #FBBD23; /* Yellow warning */
+    --color-warning-content: #382800;
+
+    --color-error: #F87272; /* Red error */
+    --color-error-content: #470000;
+
+    /* Border radius */
+    --radius-selector: 0.5rem; /* For buttons, tabs */
+    --radius-field: 0.25rem; /* For inputs, selects */
+    --radius-box: 1rem; /* For cards, containers */
+
+    /* Base sizes */
+    --size-selector: 0.25rem; /* Padding for buttons */
+    --size-field: 0.25rem; /* Padding for inputs */
+
+    /* Border size */
+    --border: 1px;
+
+    /* Effects */
+    --depth: 0.1; /* Shadow depth */
+    --noise: 0; /* Texture effect */
+}
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Date Range Picker Styles */
+.date-range-picker .calendar-day {
+    @apply w-8 h-8 flex items-center justify-center rounded-full;
+}
+
+.date-range-picker .in-range {
+    @apply bg-primary/20;
+}
+
+.date-range-picker .start-date {
+    @apply bg-primary text-primary-content rounded-l-full;
+}
+
+.date-range-picker .end-date {
+    @apply bg-primary text-primary-content rounded-r-full;
+}
+
+.date-range-picker .today {
+    @apply bg-secondary text-secondary-content;
+}
